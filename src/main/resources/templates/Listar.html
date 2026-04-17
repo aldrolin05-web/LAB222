@@ -21,7 +21,8 @@
         <td th:text = "${mascota.Edad}"></td>
         <td th:text = "${mascota.NombreDueño}"></td>
         <td th:text = "${mascota.Telefono}"></td>>
-
+        <td><a class = "btn btn-primary" th:href="@{'/editar' + '?id=' + ${mascota.id}}">Editar</a></td>
+        <td><a class = "btn btn-danger" th:href="@{'/borrar' + '?id=' + ${mascota.id}}">Borrar</a></td>
     </tr>
 </table>
 </body>
