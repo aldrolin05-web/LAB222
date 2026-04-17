@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Nombre</th>
+        <th>Especie</th>
+        <th>Raza</th>
+        <th>Edad</th>
+        <th>Nombre Dueño</th>>
+        <th>Telefono</th>
+    </tr>
+    <tr th:each = "mascota : ${mascotaLista}">
+        <td th:text = "${mascota.nombre}"></td>
+        <td th:text = "${mascota.Especie}"></td>
+        <td th:text = "${mascota.Raza}"></td>
+        <td th:text = "${mascota.Edad}"></td>
+        <td th:text = "${mascota.NombreDueño}"></td>
+        <td th:text = "${mascota.Telefono}"></td>>
+
+    </tr>
+</table>
+</body>
+</html>

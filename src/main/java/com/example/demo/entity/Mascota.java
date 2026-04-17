@@ -28,6 +28,9 @@ public class Mascota {
     @Column(name = "nombre_dueno", nullable = false)
     private String nombreDueño;
 
+    @Column(name = "telefono", nullable = false)
+    private String telefono;
+
     @Column(name = "estado", nullable = false)
     private int estado;
 }
